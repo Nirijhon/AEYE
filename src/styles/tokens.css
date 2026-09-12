@@ -1,0 +1,119 @@
+/* ============================================================
+   A.eye — Cyber Design Tokens
+   Dark neon theme: cyan / blue / purple accents on near-black.
+   ============================================================ */
+
+:root {
+  /* Brand palette — A•EYE Systems Technology Inc. */
+  --c-dark: #050814;
+  --c-card: #0b1128;
+  --c-border: #1e295d;
+  --c-cyan: #00f2fe;
+  --c-blue: #4facfe;
+  --c-purple: #9d4edd;
+  --c-magenta: #f72585;
+
+  /* Legacy navy scale (mapped to dark cyber surfaces) */
+  --c-navy-900: #050814;
+  --c-navy-800: #0b1128;
+  --c-navy-700: #131a45;
+  --c-navy-600: #1e295d;
+  --c-navy-100: #141f4d;
+  --c-navy-50: #0d1533;
+
+  /* Accent scale (cyan family — replaces legacy amber) */
+  --c-amber-600: #07c4d6;
+  --c-amber-500: #00f2fe;
+  --c-amber-400: #4facfe;
+  --c-amber-100: rgba(0, 242, 254, 0.14);
+  --c-amber-50: rgba(0, 242, 254, 0.08);
+
+  /* Neutrals (dark-first) */
+  --c-slate-900: #e8eef9;
+  --c-slate-700: #dbe3f0;
+  --c-slate-500: #94a3b8;
+  --c-slate-400: #7d8db1;
+  --c-slate-300: #cbd5e1;
+  --c-slate-200: #1e295d;
+  --c-slate-100: #16204a;
+  --c-slate-50: #0b1128;
+  --c-white: #ffffff;
+
+  /* Semantic */
+  --c-success: #4ade80;
+  --c-success-bg: rgba(74, 222, 128, 0.1);
+  --c-danger: #f87171;
+  --c-danger-bg: rgba(248, 113, 113, 0.12);
+  --c-warning: #fbbf24;
+  --c-warning-bg: rgba(251, 191, 36, 0.12);
+  --c-info: #4facfe;
+  --c-info-bg: rgba(79, 172, 254, 0.12);
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Orbitron', 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-accent: 'Rajdhani', 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --text-3xl: clamp(2rem, 4vw, 3.25rem);
+  --text-2xl: clamp(1.6rem, 3vw, 2.25rem);
+  --text-xl: 1.5rem;
+  --text-lg: 1.125rem;
+  --text-base: 1rem;
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+
+  /* Spacing (8px grid) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Layout */
+  --page-max: 1200px;
+  --page-pad: clamp(1rem, 4vw, 2rem);
+  --nav-h: 72px;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
+
+  /* Shadows (neon glow) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.45);
+  --shadow-xl: 0 24px 48px -12px rgba(0, 0, 0, 0.55);
+  --shadow-glow: 0 0 20px rgba(0, 242, 254, 0.25);
+  --shadow-glow-purple: 0 0 20px rgba(157, 78, 221, 0.3);
+  --shadow-glow-lg: 0 0 35px rgba(0, 242, 254, 0.4);
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur: 220ms;
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 3px rgba(0, 242, 254, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

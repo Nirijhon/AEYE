@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A•EYE Systems Technology Inc.</title>
+    <script>
+      /* GitHub Pages SPA fallback — the app uses hash routing, so any stray
+         path is sent back to the app root (project-page aware, loop-safe). */
+      (function () {
+        var parts = window.location.pathname.split('/').filter(Boolean);
+        if (parts.length > 0) {
+          var target = '/' + parts[0] + '/';
+          if (window.location.pathname !== target) {
+            window.location.replace(target);
+            return;
+          }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+          document.body.innerHTML =
+            '<p style="font-family:sans-serif;padding:2rem;text-align:center">Page not found — <a href="./">back to A•EYE home</a></p>';
+        });
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "aeye-security",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A.eye Security Services — professional website prototype (frontend demo, no backend connected)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:render": "node test/smoke-runner.mjs",
+    "test:flows": "node test/smoke-runner.mjs flow-lib",
+    "test": "node test/smoke-runner.mjs && node test/smoke-runner.mjs flow-lib"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^25.0.1",
+    "vite": "^5.4.11"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
+  }
+}

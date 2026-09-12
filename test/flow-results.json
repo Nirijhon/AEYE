@@ -1,0 +1,46 @@
+[
+  [
+    "apply: step 1 renders",
+    true
+  ],
+  [
+    "apply: empty submit blocked",
+    true
+  ],
+  [
+    "apply: step 2 after valid step 1",
+    true
+  ],
+  [
+    "apply: review step rendered",
+    true
+  ],
+  [
+    "apply: success + reference code",
+    true
+  ],
+  [
+    "apply: persisted to demo storage",
+    true
+  ],
+  [
+    "request: step 2 after needs",
+    true
+  ],
+  [
+    "request: step 3 after schedule",
+    true
+  ],
+  [
+    "request: success + RQ reference",
+    true
+  ],
+  [
+    "track: demo button present",
+    true
+  ],
+  [
+    "track: demo tracker renders",
+    true
+  ]
+]
