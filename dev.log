@@ -3,49 +3,33 @@
 > vite
 
 
-  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m340[22m[2m[0m ms[22m
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m458[22m[2m[0m ms[22m
 
   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
 [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
 [2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
-[2m7:04:39 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ui/Icon.jsx[22m
-[2m7:04:41 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/HeroSection.jsx[22m
-[2m7:04:43 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/HeroSection.jsx[22m
-[2m7:05:38 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
-[2m7:06:53 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ui/Icon.jsx[22m
-[2m7:07:25 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ui/Icon.jsx[22m
-[2m7:14:06 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Navbar.jsx[22m
-[2m7:14:08 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
-[2m7:14:41 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
-[2m7:20:09 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
-[2m7:24:59 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
-[2m7:31:22 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/Home.jsx[22m
-[2m7:32:11 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
-[2m7:37:08 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/Home.jsx[22m
-[2m7:37:10 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/decor/CircuitSide.jsx[22m
-[2m7:55:20 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
-[2m7:55:20 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/HeroSection.jsx[22m
-[2m8:01:33 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Services.jsx, /src/pages/home/TrustServices.jsx, /src/pages/request/ReqSteps.jsx[22m
-[2m8:02:06 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
-[2m8:02:08 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
-[2m8:02:10 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Services.jsx[22m
-[2m8:02:12 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Services.jsx[22m
-[2m8:02:14 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Services.jsx[22m
-[2m8:02:16 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/TrustServices.jsx[22m
-[2m8:02:34 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/HeroSection.jsx[22m
-[2m8:02:36 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/HeroSection.jsx[22m
-[2m8:02:38 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/HeroSection.jsx[22m
-[2m8:02:40 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/HeroSection.jsx[22m
-[2m8:02:42 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/HeroSection.jsx[22m
-[2m8:02:44 AM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
-[2m8:06:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/About.jsx[22m
-[2m8:11:37 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ui/Icon.jsx[22m
-[2m8:13:27 AM[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
-[2m8:13:27 AM[22m [36m[1m[vite][22m[39m server restarted.
-[2m8:13:29 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
-[2m8:13:31 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
-[2m8:13:33 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
-[2m8:13:35 AM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mpublic/404.html[22m
-[2m8:35:37 AM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
-[2m8:35:39 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Navbar.jsx[22m
-[2m8:35:41 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
+[2m2:18:34 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Navbar.jsx[22m
+[2m2:18:36 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
+[2m2:22:17 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/TrustServices.jsx, /src/pages/Services.jsx, /src/pages/request/ReqSteps.jsx[22m
+[2m2:30:40 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Services.jsx[22m
+[2m2:31:29 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Services.jsx[22m
+[2m2:31:33 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/About.jsx[22m
+[2m2:32:05 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
+[2m2:32:10 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
+[2m2:32:15 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
+[2m2:32:19 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
+[2m2:32:24 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
+[2m3:00:38 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx, /src/pages/Services.jsx, /src/pages/About.jsx[22m
+[2m3:00:41 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Navbar.jsx[22m
+[2m3:00:43 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
+[2m3:00:45 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
+[2m3:02:24 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ui/Icon.jsx[22m
+[2m3:03:38 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/PageShell.jsx[22m
+[2m3:03:40 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m3:03:43 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m3:03:45 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/Home.jsx[22m
+[2m3:04:51 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Services.jsx[22m
+[2m3:04:53 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Services.jsx[22m
+[2m3:04:55 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/About.jsx[22m
+[2m3:04:57 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
+[2m3:04:59 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m

@@ -1,27 +1,172 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A•EYE Systems Technology Inc.</title>
-    <script>
-      /* GitHub Pages SPA fallback — the app uses hash routing, so any stray
-         path is sent back to the app root (project-page aware, loop-safe). */
-      (function () {
-        var parts = window.location.pathname.split('/').filter(Boolean);
-        if (parts.length > 0) {
-          var target = '/' + parts[0] + '/';
-          if (window.location.pathname !== target) {
-            window.location.replace(target);
-            return;
-          }
+    <meta name="description" content="Page not found — A•EYE Systems Technology Inc." />
+    <meta name="theme-color" content="#050814" />
+    <title>404 — Page Not Found | A•EYE Systems Technology Inc.</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --c-slate-50: #f8fafc;
+        --c-slate-100: #f1f5f9;
+        --c-slate-800: #1e293b;
+        --c-slate-900: #0f172a;
+        --c-primary: #00d4ff;
+        --c-accent: #a855f7;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background: var(--c-slate-900);
+        color: var(--c-slate-50);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: clamp(4rem, 12vw, 10rem);
+        font-weight: 900;
+        background: linear-gradient(135deg, var(--c-primary), var(--c-accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1;
+        margin-bottom: 1rem;
+        animation: pulse 4s ease-in-out infinite;
+      }
+
+      h2 {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--c-slate-50);
+      }
+
+      p {
+        font-size: 1.125rem;
+        color: #7c8da1;
+        max-width: 500px;
+        margin-bottom: 2rem;
+      }
+
+      .actions {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+        margin: 0.25rem;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, var(--c-primary), #0ea5e9);
+        color: var(--c-slate-900);
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--c-slate-50);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .btn-outline:hover {
+        border-color: var(--c-primary);
+        color: var(--c-primary);
+      }
+
+      footer {
+        margin-top: 3rem;
+        padding: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.75rem;
+        color: #7c8da1;
+        text-align: center;
+      }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: clamp(3rem, 10vw, 5rem);
         }
-        document.addEventListener('DOMContentLoaded', function () {
-          document.body.innerHTML =
-            '<p style="font-family:sans-serif;padding:2rem;text-align:center">Page not found — <a href="./">back to A•EYE home</a></p>';
-        });
-      })();
-    </script>
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>404</h1>
+      <h2>Page Not Found</h2>
+      <p>
+        The page you are looking for does not exist or has moved.
+        Please return to the homepage or browse our services.
+      </p>
+      <div class="actions">
+        <a href="./index.html" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9 9 3 15 9 21 3" />
+            <path d="M3 15 9 21 15 15 21 21" />
+            <path d="M9 3v18" />
+            <path d="M15 9v12" />
+            <path d="M9 9h12" />
+          </svg>
+          Back to Home
+        </a>
+        <a href="./services.html" class="btn btn-outline">View Services</a>
+        <a href="./careers.html" class="btn btn-outline">Careers</a>
+        <a href="./about.html" class="btn btn-outline">About Us</a>
+      </div>
+    </div>
+    <footer>
+      &copy; 2026 A•EYE Systems Technology Inc. — Smart Security. Reliable Technology.
+    </footer>
+  </body>
 </html>
+

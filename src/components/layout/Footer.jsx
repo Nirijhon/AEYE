@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../ui/Link';
 import Icon from '../ui/Icon';
+import { COMPANY } from '../../data/company';
 
 const QUICK = [
   { to: '/', label: 'Home' },
@@ -11,7 +12,7 @@ const QUICK = [
   { to: '/dashboard', label: 'Client Demo Dashboard' },
 ];
 
-const SERVICES = ['CCTV Systems', 'Security Systems', 'Networking'];
+const SERVICES = ['CCTV & Video Surveillance', 'Networking Infrastructure', 'Access & Security Systems', 'Support & Maintenance'];
 
 export default function Footer() {
   return (
@@ -19,7 +20,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <Link to="/" className="brand" aria-label="A•EYE Systems Technology Inc. — home">
+            <Link to="/" className="brand" aria-label="A•EYE — A-Eye System Technology home">
               <span className="brand-mark" aria-hidden="true">
                 <span className="brand-mark-core">
                   <img className="brand-mark-img" src="./logo.png" alt="" />
@@ -27,12 +28,12 @@ export default function Footer() {
               </span>
               <span>
                 A•EYE
-                <span className="brand-sub">Systems Technology Inc.</span>
+                <span className="brand-sub">System Technology</span>
               </span>
             </Link>
             <p className="footer-desc">
-              A•EYE SYSTEMS TECHNOLOGY INC. — Smart Security. Reliable Technology.
-              CCTV, security systems and networking for homes and businesses.
+              {COMPANY.name} — {COMPANY.tagline}. CCTV, electronic security,
+              networking and structured IT infrastructure for businesses and homes.
             </p>
             <div className="footer-tagline" style={{ fontFamily: 'var(--font-accent)', color: 'var(--c-cyan)', fontSize: 'var(--text-xs)' }}>
               Home &amp; Business Solutions
@@ -64,24 +65,24 @@ export default function Footer() {
           <div>
             <h2 className="footer-heading">Get in Touch</h2>
             <div className="footer-contact">
+              <a href={COMPANY.telHref}>
+                <Icon name="phone" size={15} /> {COMPANY.phones[0]}
+              </a>
+              <a href={`mailto:${COMPANY.emails[0]}`}>
+                <Icon name="mail" size={15} /> {COMPANY.emails[0]}
+              </a>
               <span>
-                <Icon name="phone" size={15} /> +63 2 8888 4455
+                <Icon name="mapPin" size={15} /> {COMPANY.address}
               </span>
               <span>
-                <Icon name="mail" size={15} /> ops@aeye.security
-              </span>
-              <span>
-                <Icon name="mapPin" size={15} /> 14F One Rockwell, BGC, Taguig 1630, PH
-              </span>
-              <span>
-                <Icon name="clock" size={15} /> Dispatch: 24/7 · Office: Mon–Sat 8:00–18:00
+                <Icon name="userCheck" size={15} /> {COMPANY.authorizedContact.name} — {COMPANY.authorizedContact.role}
               </span>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} A.eye Security Services. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} {COMPANY.name}. All rights reserved.</span>
           <span className="footer-demo">
             <Icon name="info" size={13} /> Prototype build — no live database connected
           </span>

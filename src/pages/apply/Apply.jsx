@@ -38,8 +38,10 @@ const RULES_2 = {
   resume: [fileName],
 };
 
-export default function Apply() {
-  const { jobId } = useParams();
+export default function Apply({ jobId: propJobId }) {
+  const params = typeof useParams === 'function' ? useParams() : {};
+  const queryId = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('jobId') : null;
+  const jobId = propJobId || params.jobId || queryId;
   const job = getJob(jobId);
 
   if (!job) {

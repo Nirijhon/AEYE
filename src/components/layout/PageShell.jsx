@@ -1,12 +1,12 @@
 import React from 'react';
-import { ToastProvider } from './components/ui/Toast';
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
-import FloatingContact from './components/layout/FloatingContact';
-import { ScrollTop } from './components/layout/Shell';
-import Home from './pages/home/Home';
+import { ToastProvider } from '../ui/Toast';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import FloatingContact from './FloatingContact';
+import { ScrollTop } from './Shell';
+import '../../styles/index.css';
 
-export default function App() {
+export default function PageShell({ children }) {
   const skipToMain = (e) => {
     e.preventDefault();
     const main = document.getElementById('main-content');
@@ -24,7 +24,7 @@ export default function App() {
         </a>
         <Navbar />
         <main id="main-content" className="page-main" tabIndex={-1}>
-          <Home />
+          {children}
         </main>
         <Footer />
         <FloatingContact />

@@ -1,15 +1,16 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import Link from '../components/ui/Link';
 import PageHeader from '../components/layout/PageHeader';
 import Button from '../components/ui/Button';
 import Badge from '../components/ui/Badge';
 import Icon from '../components/ui/Icon';
 import EmptyState from '../components/ui/States';
 import JobCard from '../components/jobs/JobCard';
-import jobs, { getJob } from '../data/jobs';
+import { jobs, getJob } from '../data/jobs';
 
-export default function JobDetail() {
-  const { id } = useParams();
+export default function JobDetail({ jobId: propJobId }) {
+  const queryId = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('id') : null;
+  const id = propJobId || queryId;
   const job = getJob(id);
 
   if (!job) {

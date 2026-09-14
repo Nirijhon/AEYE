@@ -100,6 +100,9 @@ const P = {
     circ(9, 7, 4),
   ],
   arrowDown: ['M12 5v14', 'm19 12-7 7-7-7'],
+  camera: ['M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z', circ(12, 13, 4)],
+  message: ['M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z'],
+  send: ['m22 2-7 20-4-9-9-4Z', 'M22 2 11 13'],
 };
 
 const S = { fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' };

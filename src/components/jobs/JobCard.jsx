@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../ui/Link';
 import Badge from '../ui/Badge';
 import Icon from '../ui/Icon';
 import Button from '../ui/Button';

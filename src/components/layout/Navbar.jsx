@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from '../ui/Link';
 import Icon from '../ui/Icon';
 import Button from '../ui/Button';
 import { useLockBodyScroll } from '../../hooks/useReveal';
@@ -14,23 +14,24 @@ const LINKS = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const location = useLocation();
+  const path = window.location.pathname;
   const btnRef = useRef(null);
   useLockBodyScroll(open);
 
   useEffect(() => {
     setOpen(false);
-  }, [location.pathname]);
+  }, [path]);
 
   const isActive = (to) => {
-    const on = to === '/' ? location.pathname === '/' : location.pathname.startsWith(to);
+    const linkPath = to === '/' ? '/index.html' : `${to}.html`;
+    const on = to === '/' ? (path === '/' || path.endsWith('/index.html')) : path.includes(to);
     return on ? 'active' : '';
   };
 
   return (
     <header className="navbar">
       <div className="container navbar-inner">
-        <Link to="/" className="brand" aria-label="A•EYE Systems Technology Inc. — home">
+        <Link to="/" className="brand" aria-label="A•EYE — A-Eye System Technology home">
           <span className="brand-mark" aria-hidden="true">
             <span className="brand-mark-core">
               <img className="brand-mark-img" src="./logo.png" alt="" />
@@ -38,7 +39,7 @@ export default function Navbar() {
           </span>
           <span>
             A•EYE
-            <span className="brand-sub">Systems Technology Inc.</span>
+            <span className="brand-sub">System Technology</span>
           </span>
         </Link>
 

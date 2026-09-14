@@ -4,6 +4,7 @@ import { TrustStrip, ServicesPreview } from './TrustServices';
 import { ClientFlow, ApplicantFlow } from './Flows';
 import { WhyUs, Testimonials } from './WhyTestimonials';
 import { JobsPreview, CtaBanner } from './CtaJobs';
+import PortfolioGallery from '../../components/sections/PortfolioGallery';
 import { useRevealOnScroll } from '../../hooks/useReveal';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <ServicesPreview />
       <ClientFlow />
       <WhyUs />
+      <PortfolioGallery />
       <JobsPreview />
       <Testimonials />
       <ApplicantFlow />

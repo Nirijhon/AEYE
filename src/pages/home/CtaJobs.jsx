@@ -3,10 +3,10 @@ import SectionHeading from '../../components/ui/SectionHeading';
 import Button from '../../components/ui/Button';
 import Icon from '../../components/ui/Icon';
 import JobCard from '../../components/jobs/JobCard';
-import jobs, { filterJobs } from '../../data/jobs';
+import { jobs, filterJobs } from '../../data/jobs';
 
 export function JobsPreview({ limit = 3 }) {
-  const featured = filterJobs({ categories: ['Guard & Officer', 'Armed & Response'], locations: [] }).slice(0, limit);
+  const featured = filterJobs({ categories: ['CCTV Installation', 'Security Operations'], locations: [] }).slice(0, limit);
   return (
     <section className="section" style={{ background: 'var(--c-slate-50)' }}>
       <div className="container">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from './Link';
 import Spinner from './Spinner';
 
 const VARIANTS = ['primary', 'secondary', 'outline', 'outline-light', 'ghost', 'danger', 'white'];
@@ -7,7 +7,7 @@ const SIZES = ['sm', 'md', 'lg'];
 
 /**
  * Reusable button. Renders a <button> by default:
- *   - `to`  -> react-router Link
+ *   - `to`  -> react-router Link (now custom Link)
  *   - `href`-> plain anchor
  * Props: variant, size, loading, disabled, fullWidth, icon, className
  */

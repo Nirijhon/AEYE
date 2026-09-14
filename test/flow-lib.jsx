@@ -107,7 +107,7 @@ async function applicantFlow() {
 async function requestFlow() {
   const root = mount('/request-personnel', '/request-personnel', RequestPersonnel);
   await sleep(50);
-  setValue(byId('service'), 'CCTV Systems');
+  setValue(byId('service'), 'CCTV & Video Surveillance');
   setValue(byId('siteType'), 'Corporate office');
   setValue(byId('city'), 'Makati');
   setValue(byId('headcount'), '4');

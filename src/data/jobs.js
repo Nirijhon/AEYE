@@ -1,276 +1,287 @@
-/* DEMO DATA — job openings (sample content). */
-export const JOB_CATEGORIES = ['Guard & Officer', 'Armed & Response', 'Monitoring & Tech', 'Executive & VIP', 'Events & Patrol'];
-export const JOB_LOCATIONS = ['Makati', 'BGC Taguig', 'Quezon City', 'Pasay', 'Mandaluyong', 'Cebu'];
-export const JOB_TYPES = ['Full-time', 'Part-time', 'Contract'];
+/* ============================================================
+   DEMO DATA - job openings aligned to A.eye service offerings.
+   
+   Services:
+   1. CCTV Installation Technician
+   2. IT / Network Technician
+   3. Sales Executive
+   4. Admin & Accounting Assistant
+   5. CCTV Operator
+   ============================================================ */
+
+const JOB_CATEGORIES = [
+  'CCTV Installation',
+  'IT & Networking',
+  'Sales & Business',
+  'Admin & Accounting',
+  'Security Operations',
+];
+
+const JOB_LOCATIONS = [
+  'Metro Manila',
+  'Cebu',
+  'Davao',
+  'Quezon City',
+  'Makati',
+];
+
+const JOB_TYPES = [
+  'Full-time',
+  'Part-time',
+  'Contractual',
+  'On-call',
+];
 
 const jobs = [
+  // CCTV Installation Technician
   {
     id: 1,
-    title: 'Licensed Security Guard — Corporate Office',
-    category: 'Guard & Officer',
-    location: 'Makati',
+    title: 'CCTV Installation Technician',
+    category: 'CCTV Installation',
+    location: 'Metro Manila',
     type: 'Full-time',
     shift: 'Shifting',
-    salary: '₱18,000 – ₱22,000/mo',
-    postedDaysAgo: 1,
-    slots: 12,
+    salary: '18000 - 25000 P/month',
     urgent: true,
-    tags: ['Licensed', 'Entry Level', 'Day & Night'],
-    summary:
-      'Uniformed front-line officers for a 22-floor corporate tower. Manage lobby access, conduct hourly patrols and respond to minor incidents with a professional team.',
+    tags: ['Installation', 'CCTV', 'Wiring'],
+    postedDaysAgo: 0,
+    slots: 3,
+    experience: '1-3 years',
+    education: 'HS Graduate or TESDA certified',
     requirements: [
-      'Valid security guard license (NCRPO-accredited)',
-      'Physically fit, 18 years and above',
-      'Basic first-aid and incident reporting skills',
-      'Willing to work shifting schedules including holidays',
+      'TESDA NCC II in CCTV Installation preferred',
+      'Knowledge of cable management',
+      'Experience with NVR DVR setup',
+      'Valid driver license',
     ],
-    preferred: ['Previous corporate or condominium post', 'Basic computer literacy', 'Good English communication'],
-    benefits: ['Uniform and equipment provided', 'Health card and SSS contributions', 'Overtime at 1.5x', 'Career progression to Senior Guard'],
-    education: 'High school graduate or equivalent',
-    experience: 'No prior experience required — full on-site training provided',
-    applyNote: 'Open to applicants nationwide. Background check and medical clearance are part of the process.',
+    description: 'Install configure and test CCTV systems for residential and commercial clients.'
   },
+  // Senior CCTV Technician
   {
     id: 2,
-    title: 'Armed Response Officer',
-    category: 'Armed & Response',
-    location: 'BGC Taguig',
+    title: 'Senior CCTV Technician',
+    category: 'CCTV Installation',
+    location: 'Quezon City',
     type: 'Full-time',
-    shift: 'Shifting',
-    salary: '₱26,000 – ₱30,000/mo',
+    shift: 'Day',
+    salary: '30000 - 40000 P/month',
+    urgent: false,
+    tags: ['Senior', 'Installation', 'Team Lead'],
     postedDaysAgo: 2,
-    slots: 6,
-    urgent: true,
-    tags: ['Armed', 'Rapid Response', 'License Required'],
-    summary:
-      'Part of our rapid-deploy armed response team covering BGC and surrounding financial districts. Standby duty with immediate dispatch for alert activations.',
+    slots: 2,
+    experience: '3-5 years',
+    education: 'TESDA certified or equivalent',
     requirements: [
-      'Valid firearms license with active proficiency',
-      'Security license in good standing (3+ years)',
-      'Clean background check and drug testing',
-      'Tactical driving or escort experience preferred',
+      '5+ years CCTV installation experience',
+      'Team leadership skills',
+      'Advanced IP camera knowledge',
     ],
-    preferred: ['Retired AFP/PNP or active reserve status', 'Certified in defensive tactics', 'Experience with cash-in-transit'],
-    benefits: ['Premium pay and hazard allowance', 'Tactical gear allowance', 'Specialized training and certifications paid by company', 'Priority promotion to team lead'],
-    education: 'High school graduate or equivalent',
-    experience: '3+ years in armed security or law enforcement',
-    applyNote: 'Strict screening applies. Candidates must pass physical fitness and firearms qualification.',
+    description: 'Lead installation teams for complex security systems.'
   },
+  // IT Network Technician
   {
     id: 3,
-    title: 'CCTV Control Room Operator',
-    category: 'Monitoring & Tech',
-    location: 'Quezon City',
+    title: 'IT Network Technician',
+    category: 'IT and Networking',
+    location: 'Makati',
     type: 'Full-time',
-    shift: 'Shifting',
-    salary: '₱20,000 – ₱24,000/mo',
-    postedDaysAgo: 3,
-    slots: 8,
-    urgent: false,
-    tags: ['CCTV', 'Monitoring', 'Tech'],
-    summary:
-      'Monitor live camera feeds for multiple client sites, log events and escalate alarms to response teams through our command center.',
+    shift: 'Day',
+    salary: '20000 - 28000 P/month',
+    urgent: true,
+    tags: ['Networking', 'IT Support', 'Cabling'],
+    postedDaysAgo: 1,
+    slots: 4,
+    experience: '1-3 years',
+    education: 'College graduate or TESDA NC II',
     requirements: [
-      'Comfortable with computer systems and CCTV software',
-      'Detail-oriented with clear log writing',
-      'Willing to work 24/7 rotating shifts',
-      'Familiar with incident escalation protocols',
+      'Knowledge of structured cabling',
+      'Basic networking TCP/IP WiFi',
+      'Customer service orientation',
     ],
-    preferred: ['Certification in security electronics', 'Previous command-center experience', 'Typing speed of 40+ WPM'],
-    benefits: ['Night differential pay', 'Air-conditioned command center', 'Training on advanced AI monitoring tools', 'HMO coverage after 6 months'],
-    education: 'Vocational/technical diploma acceptable',
-    experience: 'At least 6 months in security, dispatch or related monitoring role',
-    applyNote: 'All applicants must pass a vision and attention test.',
+    description: 'Install and maintain IT infrastructure including structured cabling and WiFi.'
   },
+  // Network Systems Specialist
   {
     id: 4,
-    title: 'Executive Protection Specialist',
-    category: 'Executive & VIP',
-    location: 'Mandaluyong',
-    type: 'Full-time',
-    shift: 'Flexible',
-    salary: '₱40,000 – ₱55,000/mo',
-    postedDaysAgo: 5,
-    slots: 3,
-    urgent: false,
-    tags: ['VIP', 'Close Protection', 'Senior'],
-    summary:
-      'Close-protection detail for principal officers and visiting executives. Route planning, venue advance, and discreet day-to-day bodyguard duties.',
-    requirements: [
-      '8+ years security or military/law-enforcement experience',
-      'Close Protection certification (CPO level)',
-      'Impeccable character references and clean record',
-      'Fit for extended stand-by and travel duties',
-    ],
-    preferred: ['Defensive driving certification', 'Foreign language ability (Mandarin/English)', 'Advance-work experience for media events'],
-    benefits: ['Highest pay bracket', 'Travel allowances', 'Confidentiality incentives', 'Specialist medical and life insurance'],
-    education: 'College or military academy background preferred',
-    experience: '8+ years in executive protection or elite units',
-    applyNote: 'Shortlisted candidates will undergo psychological profiling and a two-day practical assessment.',
-  },
-  {
-    id: 5,
-    title: 'Event Security Marshal',
-    category: 'Events & Patrol',
-    location: 'Pasay',
-    type: 'Contract',
-    shift: 'Event days',
-    salary: '₱750/day + meals',
-    postedDaysAgo: 1,
-    slots: 30,
-    urgent: true,
-    tags: ['Events', 'Flexible Hours'],
-    summary:
-      'On-call crowd marshals for concerts, expos and corporate events at Pasay venues. Fast onboarding with regular weekly assignments.',
-    requirements: [
-      'Security license or event-credential acceptable',
-      'Comfortable standing for full event shifts',
-      'Composed under crowd pressure',
-    ],
-    preferred: ['Crowd management training', 'Previous event or hotel experience'],
-    benefits: ['Daily rate paid promptly', 'Paid travel for distant venues', 'Priority access to full-time roles'],
-    education: 'High school graduate or equivalent',
-    experience: 'Training provided for first-timers',
-    applyNote: 'Best for students and part-timers. Assignments are posted weekly via the mobile app (demo).',
-  },
-  {
-    id: 6,
-    title: 'Mobile Patrol Officer',
-    category: 'Events & Patrol',
-    location: 'Cebu',
-    type: 'Full-time',
-    shift: 'Night',
-    salary: '₱19,000 – ₱23,000/mo',
-    postedDaysAgo: 4,
-    slots: 5,
-    urgent: false,
-    tags: ['Patrol', 'Night Shift', 'Driver'],
-    summary:
-      'Drive scheduled patrol routes for commercial parks and warehouses. Use the patrol app to log checkpoints and escalate alerts.',
-    requirements: [
-      'Valid Philippine driver license',
-      'Clean driving record',
-      'Familiarity with GPS/navigation apps',
-    ],
-    preferred: ['Security background preferred', 'Motorpool maintenance knowledge'],
-    benefits: ['Night differential', 'Vehicle and fuel provided', 'Cellphone and app allowance', 'Quarterly performance bonus'],
-    education: 'High school graduate or equivalent',
-    experience: '6+ months driving or guarding experience',
-    applyNote: 'Route assignments rotate monthly. Candidates must be comfortable driving an agency-marked patrol vehicle.',
-  },
-  {
-    id: 7,
-    title: 'Access Control Officer — Condominium',
-    category: 'Guard & Officer',
-    location: 'BGC Taguig',
-    type: 'Full-time',
-    shift: 'Shifting',
-    salary: '₱17,000 – ₱20,000/mo',
-    postedDaysAgo: 6,
-    slots: 10,
-    urgent: false,
-    tags: ['Residential', 'Front Desk', 'Licensed'],
-    summary:
-      'First point of contact for a premium condominium: verify visitors, manage keys and package handling, and coordinate with building admin.',
-    requirements: [
-      'Valid security guard license',
-      'Presentable, customer-service oriented',
-      'Adept at visitor logs and identification checks',
-    ],
-    preferred: ['Condo/hotel front-desk experience', 'First-aid certification'],
-    benefits: ['Uniform allowance', 'Meal allowance on night shift', '13th-month equivalent after 1 year', 'Shuttle access to BGC'],
-    education: 'High school graduate or equivalent',
-    experience: 'No experience needed — 2-week site training provided',
-    applyNote: 'Ideal for candidates living near Taguig or McKinley area due to early shifts.',
-  },
-  {
-    id: 8,
-    title: 'Fire Watch & Safety Officer',
-    category: 'Guard & Officer',
-    location: 'Quezon City',
-    type: 'Contract',
-    shift: 'Shifting',
-    salary: '₱650/day',
-    postedDaysAgo: 2,
-    slots: 15,
-    urgent: true,
-    tags: ['Fire Watch', 'Safety', 'Certified'],
-    summary:
-      'Certified fire-watch personnel for welding and hot-work permits across industrial sites and construction projects.',
-    requirements: [
-      'Fire-safety / BOSH or equivalent certification',
-      'Comfortable with PPE and heights',
-      'Clear written reporting of permit conditions',
-    ],
-    preferred: ['COSH training', 'Construction site experience'],
-    benefits: ['Per-diem paid weekly', 'PPE provided', 'Possible long-term client assignment'],
-    education: 'Any level with fire-safety certificate',
-    experience: 'Training and certification support available',
-    applyNote: 'High-demand role; multiple projects currently active. Certification sponsorship is available for the right candidate.',
-  },
-  {
-    id: 9,
-    title: 'Warehouse Security Officer',
-    category: 'Guard & Officer',
+    title: 'Network Systems Specialist',
+    category: 'IT and Networking',
     location: 'Cebu',
     type: 'Full-time',
     shift: 'Day',
-    salary: '₱16,500 – ₱19,000/mo',
-    postedDaysAgo: 7,
-    slots: 8,
+    salary: '25000 - 35000 P/month',
     urgent: false,
-    tags: ['Industrial', 'Day Shift', 'Entry'],
-    summary:
-      'Guard access for a logistics warehouse: check inbound/outbound trucks, monitor loading bays and report discrepancies to operations.',
+    tags: ['Network', 'Systems', 'Security'],
+    postedDaysAgo: 5,
+    slots: 1,
+    experience: '2-4 years',
+    education: 'College graduate IT CompSci',
     requirements: [
-      'Security license (training offered)',
-      'Able to log truck and seal numbers accurately',
-      'Team-oriented and dependable',
+      'CCNA or equivalent certification preferred',
+      'Enterprise networking experience',
+      'Network security knowledge',
     ],
-    preferred: ['Logistics domain knowledge', 'Forklift safety awareness'],
-    benefits: ['Fixed day schedule', 'Free shuttle from Mandaue', 'Rice allowance', 'Stable SLR-supported payroll'],
-    education: 'High school graduate or equivalent',
-    experience: 'Entry level — training provided',
-    applyNote: 'Great stepping-stone role with quarterly pay reviews.',
+    description: 'Design and implement network solutions for business clients.'
   },
+  // Sales Executive
+  {
+    id: 5,
+    title: 'Sales Executive - Security Systems',
+    category: 'Sales and Business',
+    location: 'Metro Manila',
+    type: 'Full-time',
+    shift: 'Day',
+    salary: '15000 base plus commission',
+    urgent: true,
+    tags: ['Sales', 'Commercial', 'B2B'],
+    postedDaysAgo: 0,
+    slots: 2,
+    experience: '1-2 years',
+    education: 'College graduate preferred',
+    requirements: [
+      'Sales experience in security or tech',
+      'Strong negotiation skills',
+      'Corporate client experience',
+    ],
+    description: 'Drive sales of security systems and services to commercial clients.'
+  },
+  // Field Sales Representative
+  {
+    id: 6,
+    title: 'Field Sales Representative',
+    category: 'Sales and Business',
+    location: 'Davao',
+    type: 'Full-time',
+    shift: 'Field-based',
+    salary: '12000 base plus commission',
+    urgent: false,
+    tags: ['Sales', 'Field', 'Regional'],
+    postedDaysAgo: 7,
+    slots: 1,
+    experience: '1+ years',
+    education: 'HS Graduate or College',
+    requirements: [
+      'Willingness to travel within region',
+      'Sales or customer service experience',
+      'Good communication skills',
+    ],
+    description: 'Expand sales coverage in Davao region.'
+  },
+  // Admin and Accounting Assistant
+  {
+    id: 7,
+    title: 'Admin and Accounting Assistant',
+    category: 'Admin and Accounting',
+    location: 'Metro Manila',
+    type: 'Full-time',
+    shift: 'Day',
+    salary: '15000 - 20000 P/month',
+    urgent: false,
+    tags: ['Admin', 'Accounting', 'Office'],
+    postedDaysAgo: 3,
+    slots: 2,
+    experience: '1-2 years',
+    education: 'College graduate Accounting Admin',
+    requirements: [
+      'Basic accounting knowledge',
+      'Proficiency in MS Office Excel Word',
+      'Attention to detail',
+    ],
+    description: 'Support daily operations with administrative and basic accounting tasks.'
+  },
+  // Office Coordinator
+  {
+    id: 8,
+    title: 'Office Coordinator',
+    category: 'Admin and Accounting',
+    location: 'Makati',
+    type: 'Full-time',
+    shift: 'Day',
+    salary: '14000 - 18000 P/month',
+    urgent: true,
+    tags: ['Admin', 'Coordination', 'Operations'],
+    postedDaysAgo: 1,
+    slots: 1,
+    experience: '1+ years',
+    education: 'College graduate',
+    requirements: [
+      'Administrative experience',
+      'Multi-tasking ability',
+      'Customer service mindset',
+    ],
+    description: 'Coordinate office operations and manage schedules.'
+  },
+  // CCTV Operator
+  {
+    id: 9,
+    title: 'CCTV Operator - Monitoring Center',
+    category: 'Security Operations',
+    location: 'Metro Manila',
+    type: 'Full-time',
+    shift: 'Night',
+    salary: '16000 - 22000 P/month',
+    urgent: true,
+    tags: ['Monitoring', 'Surveillance', 'Night Shift'],
+    postedDaysAgo: 0,
+    slots: 5,
+    experience: 'Fresh graduate welcome',
+    education: 'HS Graduate',
+    requirements: [
+      'Alert and attentive during long shifts',
+      'Basic computer literacy',
+      'Incident documentation skills',
+      'Willing to work night shifts',
+    ],
+    description: 'Monitor CCTV feeds from the central control room and detect suspicious activities.'
+  },
+  // Senior CCTV Monitor
   {
     id: 10,
-    title: 'Hotel Concierge Security',
-    category: 'Executive & VIP',
-    location: 'Makati',
-    type: 'Part-time',
-    shift: 'Shifting',
-    salary: '₱190/hr',
-    postedDaysAgo: 5,
-    slots: 6,
+    title: 'Senior CCTV Monitor',
+    category: 'Security Operations',
+    location: 'Metro Manila',
+    type: 'Full-time',
+    shift: 'Night',
+    salary: '22000 - 28000 P/month',
     urgent: false,
-    tags: ['Hotel', 'Hospitality', 'Part-time'],
-    summary:
-      'Represent the property while securing lobby, elevators and events in an upscale hotel. Evening and weekend coverage.',
+    tags: ['Senior', 'Monitoring', 'Lead'],
+    postedDaysAgo: 10,
+    slots: 2,
+    experience: '2+ years monitoring experience',
+    education: 'HS Graduate or College',
     requirements: [
-      'Presentable grooming standards',
-      'Hospitality or concierge attitude',
-      'Valid security training certificate',
+      'Previous CCTV monitoring experience',
+      'Ability to train new operators',
+      'Incident reporting knowledge',
     ],
-    preferred: ['Hotel experience', 'Basic foreign-language skills'],
-    benefits: ['Premium hourly rate', 'Meal during shift', 'Tips-friendly environment', 'Part-time flexibility for students'],
-    education: 'High school graduate or equivalent',
-    experience: 'Hospitality experience a plus',
-    applyNote: 'Perfect part-time role for hotel-management students.',
-  },
+    description: 'Supervise monitoring center operations during night shifts.'
+  }
 ];
 
-export default jobs;
+export { JOB_CATEGORIES, JOB_LOCATIONS, JOB_TYPES, jobs };
 
-export const getJob = (id) => jobs.find((j) => j.id === Number(id));
-
-export function filterJobs({ q = '', categories = [], locations = [], types = [] }) {
-  const norm = (s) => String(s || '').toLowerCase().trim();
+export function filterJobs(filters) {
   return jobs.filter((job) => {
-    if (q && !norm(`${job.title} ${job.location} ${job.tags.join(' ')}`).includes(norm(q))) return false;
-    if (categories.length && !categories.includes(job.category)) return false;
-    if (locations.length && !locations.includes(job.location)) return false;
-    if (types.length && !types.includes(job.type)) return false;
+    if (filters.q) {
+      const q = filters.q.toLowerCase();
+      const searchable = [
+        job.title,
+        job.category,
+        job.location,
+        job.type,
+        job.shift,
+        ...(job.tags || []),
+      ].join(' ').toLowerCase();
+      if (!searchable.includes(q)) return false;
+    }
+    if (filters.categories?.length && !filters.categories.includes(job.category)) return false;
+    if (filters.locations?.length && !filters.locations.includes(job.location)) return false;
+    if (filters.types?.length && !filters.types.includes(job.type)) return false;
     return true;
   });
+}
+
+export function getJob(id) {
+  if (typeof id !== 'number' && typeof id !== 'string') return null;
+  const numId = typeof id === 'string' ? Number(id) : id;
+  return jobs.find((j) => j.id === numId) || null;
 }

@@ -1,21 +1,9 @@
 import React from 'react';
 import PageHeader from '../components/layout/PageHeader';
+import SectionHeading from '../components/ui/SectionHeading';
 import Icon from '../components/ui/Icon';
+import { COMPANY, MISSION, VISION, PILLARS, VALUE_PROPOSITION } from '../data/company';
 import { useRevealOnScroll } from '../hooks/useReveal';
-
-const VALUES = [
-  { icon: 'shieldCheck', title: 'Integrity', desc: 'Post-orders are followed, logs are honest, and supervision verifies both.' },
-  { icon: 'target', title: 'Alertness', desc: 'Officers are trained to spot, report and act — never to just occupy a chair.' },
-  { icon: 'globe', title: 'Coverage', desc: 'Metro, provincial and multi-site coverage from a single accountable partner.' },
-  { icon: 'heart', title: 'Service', desc: 'This is a service industry. Clients and applicants are treated with respect.' },
-];
-
-const STATS = [
-  { value: '15+', label: 'Years securing businesses' },
-  { value: '1,200+', label: 'Trained & vetted officers' },
-  { value: '350+', label: 'Active client sites' },
-  { value: '24/7', label: 'Dispatch & monitoring' },
-];
 
 export default function About() {
   const reveal = useRevealOnScroll();
@@ -23,8 +11,8 @@ export default function About() {
     <div ref={reveal}>
       <PageHeader
         breadcrumb={[{ label: 'About' }]}
-        title="Built by operators, for operators"
-        subtitle="A.eye exists because security manpower should feel like a partnership — not a vendor list."
+        title="Integrated Security & IT Solutions"
+        subtitle={COMPANY.description}
       />
 
       <section className="section">
@@ -33,58 +21,89 @@ export default function About() {
             <Icon name="eye" size={110} />
           </div>
           <div>
-            <h2 className="section-title">Our story</h2>
+            <h2 className="section-title">Who we are</h2>
             <p style={{ marginBottom: 'var(--space-4)' }}>
-              A.eye started with a simple observation: most security incidents in commercial buildings
-              are caught not by technology, but by a well-placed, well-trained guard paying attention.
+              A-Eye System Technologies Inc. is a Philippine-based IT and security solutions
+              provider specializing in <strong>CCTV systems, electronic security, networking,
+              and structured IT infrastructure</strong>.
             </p>
             <p style={{ marginBottom: 'var(--space-4)' }}>
-              We built an agency around that insight — investing in screening, supervision and honest
-              reporting instead of just headcount. Today we deploy officers across offices, logistics,
-              events and executive protection, backed by a dispatch center that never sleeps.
+              From site survey to design, installation, testing and turnover, we deliver
+              quality products with professional installation — and back them with continuous
+              after-sales support.
             </p>
-            <p className="muted">
-              The site you are viewing is a prototype built for A.eye's management review. All data on
-              this site is sample data.
-            </p>
+            <div className="card" style={{ flexDirection: 'column', gap: '0.5rem', padding: 'var(--space-4)' }}>
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
+                <Icon name="mapPin" size={16} />
+                <span style={{ fontSize: 'var(--text-sm)' }}>{COMPANY.address}</span>
+              </div>
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                <Icon name="phone" size={16} />
+                <span style={{ fontSize: 'var(--text-sm)' }}>{COMPANY.phones.join(' / ')}</span>
+              </div>
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                <Icon name="mail" size={16} />
+                <span style={{ fontSize: 'var(--text-sm)' }}>{COMPANY.emails.join(' / ')}</span>
+              </div>
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                <Icon name="userCheck" size={16} />
+                <span style={{ fontSize: 'var(--text-sm)' }}>
+                  Authorized Contact: <strong>{COMPANY.authorizedContact.name}</strong> ({COMPANY.authorizedContact.role})
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="section" style={{ background: 'var(--c-navy-900)', color: 'var(--c-white)' }}>
+      <section className="section" style={{ paddingTop: 0 }} aria-label="Office location map">
         <div className="container">
-          <div className="stat-grid">
-            {STATS.map((s) => (
-              <div
-                key={s.label}
-                className="card stat-card"
-                style={{
-                  background: 'var(--c-navy-800)',
-                  borderColor: 'rgba(255,255,255,0.15)',
-                  flexDirection: 'column',
-                  gap: '0.35rem',
-                }}
-              >
-                <p className="stat-value" style={{ color: 'var(--c-cyan)', fontSize: 'var(--text-2xl)' }}>
-                  {s.value}
-                </p>
-                <p className="stat-label" style={{ color: 'rgba(255,255,255,0.75)' }}>
-                  {s.label}
-                </p>
-              </div>
-            ))}
+          <div className="card" style={{ overflow: 'hidden', padding: 0 }}>
+            <iframe
+              title="A-Eye System Technology office — Sinocan Corporate Center, ASEANA Business Park, Parañaque City"
+              src={COMPANY.mapEmbed}
+              width="100%"
+              height="360"
+              style={{ border: 0, display: 'block' }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
-          <p style={{ marginTop: 'var(--space-6)', color: 'rgba(255,255,255,0.6)', fontSize: 'var(--text-xs)' }}>
-            Company figures shown are sample marketing data for the prototype.
-          </p>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: 'var(--c-slate-50)' }}>
+        <div className="container">
+          <div className="svc-grid" style={{ gridTemplateColumns: 'repeat(2, minmax(0, 1fr))' }}>
+            <article className="card svc-card">
+              <span className="svc-icon">
+                <Icon name="target" size={24} />
+              </span>
+              <h3 className="svc-title">Our Mission</h3>
+              <p className="svc-desc">{MISSION}</p>
+            </article>
+            <article className="card svc-card">
+              <span className="svc-icon">
+                <Icon name="star" size={24} />
+              </span>
+              <h3 className="svc-title">Our Vision</h3>
+              <p className="svc-desc">{VISION}</p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
-          <h2 className="section-title">What we value</h2>
-          <div className="svc-grid" style={{ gridTemplateColumns: 'repeat(4, minmax(0, 1fr))' }}>
-            {VALUES.map((v) => (
+          <SectionHeading
+            eyebrow="What drives us"
+            title="Our Core Pillars"
+            sub="The four commitments behind every project we deliver."
+            centered
+          />
+          <div className="svc-grid">
+            {PILLARS.map((v) => (
               <article key={v.title} className="card svc-card">
                 <span className="svc-icon">
                   <Icon name={v.icon} size={24} />
@@ -92,6 +111,49 @@ export default function About() {
                 <h3 className="svc-title">{v.title}</h3>
                 <p className="svc-desc">{v.desc}</p>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: 'var(--c-navy-900)', color: 'var(--c-white)' }}>
+        <div className="container">
+          <h2 className="section-title" style={{ color: 'var(--c-white)' }}>Why choose A-Eye</h2>
+          <p style={{ marginBottom: 'var(--space-6)', color: 'rgba(255,255,255,0.75)', maxWidth: 640 }}>
+            Our value proposition — everything you get when you partner with A-Eye System
+            Technologies Inc.
+          </p>
+          <div
+            className="svc-grid"
+            style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.75rem' }}
+          >
+            {VALUE_PROPOSITION.map((item, i) => (
+              <div
+                key={item}
+                className="card"
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  padding: 'var(--space-4)',
+                  background: 'var(--c-navy-800)',
+                  borderColor: 'rgba(255,255,255,0.15)',
+                }}
+              >
+                <span
+                  style={{
+                    color: 'var(--c-cyan)',
+                    fontFamily: 'var(--font-accent)',
+                    fontWeight: 700,
+                    fontSize: 'var(--text-lg)',
+                  }}
+                >
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span style={{ color: 'rgba(255,255,255,0.9)', fontSize: 'var(--text-sm)', fontWeight: 600 }}>
+                  {item}
+                </span>
+              </div>
             ))}
           </div>
         </div>
