@@ -140,7 +140,7 @@ async function trackFlow() {
   check('track: demo button present', Boolean(btn));
   btn.dispatchEvent(new W.MouseEvent('click', { bubbles: true }));
   await sleep(1000);
-  check('track: demo tracker renders', hasText('#root', 'Application received') && hasText('#root', 'DEMO-APP00'));
+  check('track: demo tracker renders', hasText('#root', 'Submitted') && hasText('#root', 'DEMO-APP00'));
   root.unmount();
   document.getElementById('root').innerHTML = '';
 }

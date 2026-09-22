@@ -6,10 +6,11 @@ Maintenance — Home & Business).
 Built with **React 18 + Vite + React Router**, using a custom lightweight design
 system (no UI framework dependency).
 
-> **Important:** this is a **frontend prototype**. There is **no backend or database
-> connected**. All listings, records and submissions are demo data, and anything
-> you submit is stored only in your own browser (localStorage). Every demo feature
-> is clearly labeled in the UI.
+> **Important:** this is a **frontend prototype**. It ships **dual-mode**: with
+> no configuration it runs entirely on demo data in your own browser
+> (localStorage); add the `VITE_FIREBASE_*` env vars and the same screens read
+> and write **Firestore** instead. Every demo feature is clearly labeled in the
+> UI. See [Firebase backend](#firebase-backend-already-wired).
 
 ---
 
@@ -73,8 +74,10 @@ src/
 
 - Pages **only** call `src/services/*.js` — they never touch `localStorage`,
   `fetch` or demo data directly.
-- `services/api.js` simulates network latency and persistence and is the single
-  place marked for replacement:
+- Every service is **dual-mode**. With no Firebase config it runs the
+  localStorage demo store (below); with the `VITE_FIREBASE_*` env vars set it
+  talks to Firestore instead. The function signatures the pages use never
+  change — see `services/firebase.js`.
 
 ```js
 // To connect a real backend later:
@@ -85,6 +88,88 @@ src/
 
 - `src/data/*.js` holds realistic sample content (10 job openings, 9 services,
   dashboard records) labeled as demo data.
+- `src/data/statuses.js` is the **single source of truth for statuses** (request
+  pipeline, application stages, badge colors). The public tracker, client
+  dashboard and admin console all read it — these exact strings become the
+  database enum values when a backend is connected.
+
+## Firebase backend (already wired)
+
+The Firebase SDK is installed and every service already has a Firestore branch.
+To go live you only need a project + the env vars:
+
+```bash
+cp .env.example .env      # then paste the values from the Firebase console
+npm run dev               # the console now reads/writes Firestore
+```
+
+Env vars (Firebase console → Project settings → Your apps → SDK setup):
+
+```
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+```
+
+**Set up checklist**
+
+1. **Authentication** → enable *Email/Password*, then add one staff user
+   (`admin@aeye.local` + a password). That account signs into `admin.html`.
+2. **Firestore Database** → create it in production mode.
+3. **Storage** → enable it (résumé uploads go to `resumes/<APP-ref>/<file>`).
+4. **Rules** → `firestore.rules` is included; deploy with
+   `firebase deploy --only firestore:rules` (or paste it into the console).
+   It keeps public form submission + the `/track` reference lookup open and
+   requires a signed-in staff user for everything else.
+5. **Seed the sample rows** → sign in to the admin console and press
+   **Seed sample data** (top right). It writes the 6 sample requests, 6 sample
+   applications and publishes the first 4 job posts, so you can explore the
+   whole workflow immediately. Use **Delete all data** to empty the project.
+
+**Firestore collections**
+
+| Collection | Written by | Notes |
+| --- | --- | --- |
+| `requests` | Request Personnel form, admin console | id = `RQ-####` reference code; `status` uses the `statuses.js` pipeline, `Received` is normalized to `New` |
+| `applications` | Apply form, admin console | id = `APP-#####`; résumé uploaded to Cloud Storage, URL stored as `resumeUrl` |
+| `jobPosts` | admin console | per-post override (`postStatus`, `deleted`); the base 10 jobs come from `src/data/jobs.js` |
+| `settings` | admin console | `settings/careers` → `{ enabled }` master switch for the Careers page |
+| `audit` | admin console | append-only: entity, record id, from → to, actor, timestamp |
+| `employees`, `deployments` | *not yet* | still seeded samples from `src/data/admin.js`; rules are already locked down for a later move |
+
+**Auth is real in Firebase mode.** The console swaps the demo passcode gate for
+a Firebase `signInWithEmailAndPassword` form with session restore, sign-out and
+inline error handling, and the audit trail records the signed-in admin.
+
+## Admin console (`admin.html`)
+
+A staff-facing operations console. With no Firebase config it runs as a UI demo
+(sign-in passcode: `aeye-admin`); with Firebase it uses real email/password
+sign-in and live Firestore data.
+
+- **Overview** — KPI cards, applications chart, action queue.
+- **Requests** — pipeline for every "Request Personnel" submission
+  (`New → Under Review → Quoted → Assigned → On Site → Completed`), with
+  officer assignment, search, filters and an audit history per record.
+- **Applications** — applicant review (`Submitted → Under Review → Interview →
+  Background check → Hired / Not Selected`), forward-only advance + reject.
+- **Deployments** — who is on site, scheduled shifts, staffing gaps.
+- **Job Posts** — publish/draft/close job posts. Only **Published** posts
+  appear on the public Careers page; with none published it shows "coming soon".
+
+Admin changes persist to localStorage and are reflected live on the client
+dashboard and the applicant status tracker. "Delete all data" (top of the
+admin console) permanently wipes every record and hides the sample rows —
+stat cards, charts, notifications, deployments and the job/employee tables all
+start completely empty and stay that way across reloads instead of the samples
+being re-added. "Restore demo data" brings them back (in Firebase mode the same
+button is labeled "Seed sample data" and writes the sample records into
+Firestore).
+
+The console can also **Sign out**, which clears the console session.
 
 ## Quality checklist
 

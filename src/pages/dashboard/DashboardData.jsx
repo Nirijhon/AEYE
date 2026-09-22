@@ -39,7 +39,8 @@ export function NotificationList({ items = [], title = 'Notifications' }) {
 }
 
 export function ChartCard({ data = [] }) {
-  const max = Math.max(...data.map((d) => d.value));
+  // Guard against an empty feed (division by zero when demo data is cleared).
+  const max = Math.max(1, ...data.map((d) => d.value));
   return (
     <div className="chart" role="img" aria-label="Bar chart of deployed guards this week">
       {data.map((d) => (

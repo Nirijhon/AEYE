@@ -5,8 +5,7 @@ import Badge, { STATUS_TO_BADGE } from '../../components/ui/Badge';
 import Icon from '../../components/ui/Icon';
 import Button from '../../components/ui/Button';
 import { useToast } from '../../components/ui/Toast';
-import { requests as cannedRequests } from '../../data/dashboard';
-import { listRequests } from '../../services/requestsService';
+import { listAdminRequests } from '../../services/adminService';
 import DetailBody from './DetailBody';
 
 export default function TablesCard({ title, sub, documentsOnly = false, documentFeed }) {
@@ -21,8 +20,9 @@ export default function TablesCard({ title, sub, documentsOnly = false, document
     setFailed(false);
     try {
       if (simulateError) throw new Error('demo');
-      const mine = await listRequests();
-      setRows([...cannedRequests, ...mine.map(dashboardRow)]);
+      // Single source of truth: same rows the admin console sees,
+      // with admin pipeline/assignment changes applied.
+      setRows(await listAdminRequests());
     } catch {
       setFailed(true);
     } finally {
@@ -148,18 +148,4 @@ function DocumentsTable({ toast, docs = [] }) {
       </div>
     </div>
   );
-}
-
-function dashboardRow(m) {
-  return {
-    id: m.id,
-    service: m.service || 'Security personnel',
-    site: m.siteType || 'Your site',
-    city: m.city || '—',
-    guards: m.headcount || 1,
-    start: m.startDate || 'TBD',
-    status: m.status || 'Received',
-    officer: '—',
-    daysAgo: 0,
-  };
 }

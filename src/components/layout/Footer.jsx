@@ -10,6 +10,7 @@ const QUICK = [
   { to: '/careers', label: 'Careers' },
   { to: '/track', label: 'Track Application' },
   { to: '/dashboard', label: 'Client Demo Dashboard' },
+  { to: '/admin', label: 'Admin Console (demo)' },
 ];
 
 const SERVICES = ['CCTV & Video Surveillance', 'Networking Infrastructure', 'Access & Security Systems', 'Support & Maintenance'];

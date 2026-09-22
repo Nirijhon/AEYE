@@ -1,8 +1,11 @@
 import React from 'react';
+import { STATUS_TO_BADGE } from '../../data/statuses';
 
 /**
  * Status badge used across tables, job cards and dashboards.
  * Variants: neutral | brand | amber | success | danger | info
+ * The status → variant map lives in src/data/statuses.js so every
+ * screen renders the same status with the same color.
  */
 export default function Badge({ variant = 'neutral', children, className = '', icon = null }) {
   return (
@@ -13,19 +16,4 @@ export default function Badge({ variant = 'neutral', children, className = '', i
   );
 }
 
-export const STATUS_TO_BADGE = {
-  Active: 'success',
-  'On Site': 'success',
-  Received: 'info',
-  'Under Review': 'amber',
-  Assigned: 'brand',
-  Complete: 'success',
-  Completed: 'success',
-  Open: 'success',
-  Filled: 'neutral',
-  Pending: 'amber',
-  Hired: 'success',
-  'Not Selected': 'danger',
-  Closed: 'neutral',
-  'Follow-up': 'danger',
-};
+export { STATUS_TO_BADGE };

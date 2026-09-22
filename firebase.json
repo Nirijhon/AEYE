@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "REPLACE_WITH_YOUR_FIREBASE_PROJECT_ID"
+  },
+  "hosting": {
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [{ "source": "**", "destination": "/index.html" }]
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}

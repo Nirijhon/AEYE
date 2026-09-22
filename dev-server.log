@@ -10,3 +10,316 @@
 [2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
 [2m8:21:26 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Careers.jsx[22m
 [2m8:21:41 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Careers.jsx[22m
+[2m8:25:29 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/CtaJobs.jsx[22m
+[2m8:32:50 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2madmin.html[22m
+[2m8:32:50 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2madmin.html[22m
+[2m8:38:17 PM[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
+[2m8:38:17 PM[22m [36m[1m[vite][22m[39m server restarted.
+[2m8:38:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
+[2m9:00:38 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ui/Badge.jsx[22m
+[2m9:00:38 PM[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/ui/Badge.jsx[22m Could not Fast Refresh ("STATUS_TO_BADGE" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m9:00:38 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx[22m
+[2m9:01:18 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx, /src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx[22m
+[2m9:01:20 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx, /src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx[22m
+[2m9:01:38 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx[22m
+[2m9:01:38 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to load url /src/services/adminService.js (resolved id: C:/Users/user/Desktop/A.eye - Copy/src/services/adminService.js) in C:/Users/user/Desktop/A.eye - Copy/src/pages/admin/AdminTables.jsx. Does the file exist?
+[2m9:01:38 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to load url /src/services/adminService.js (resolved id: C:/Users/user/Desktop/A.eye - Copy/src/services/adminService.js) in C:/Users/user/Desktop/A.eye - Copy/src/pages/admin/AdminTables.jsx. Does the file exist?
+[2m9:02:09 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx[22m
+[2m9:02:21 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx[22m
+[2m9:02:59 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/TrackStatus.jsx[22m
+[2m9:03:01 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/TrackStatus.jsx[22m
+[2m9:03:25 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Careers.jsx[22m
+[2m9:03:34 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m9:04:25 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m9:04:25 PM[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/pages/admin/Admin.jsx[22m Could not Fast Refresh (export removed)
+[2m9:04:25 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/pages/admin/Admin.jsx[22m
+[2m9:04:40 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m9:06:13 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx[22m
+[2m9:07:29 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx[22m
+[2m9:07:31 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx[22m
+[2m9:08:01 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx[22m
+[2m9:08:03 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx[22m
+[2m9:08:06 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx[22m
+[2m9:08:39 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx[22m
+[2m9:08:41 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx[22m
+[2m9:09:37 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx[22m
+[2m9:09:40 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx[22m
+[2m9:16:09 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/main-admin.jsx[22m
+[2m9:18:45 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ui/Icon.jsx[22m
+[2m9:18:47 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx[22m
+[2m9:18:49 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx[22m
+[2m9:18:51 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx[22m
+[2m9:19:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:19:30 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:19:32 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:19:46 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:20:08 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:20:10 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:31:11 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/TrackStatus.jsx[22m
+[2m9:31:39 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/TrackStatus.jsx[22m
+[2m9:32:01 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx[22m
+[2m9:32:03 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx[22m
+[2m9:32:13 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:32:15 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:32:37 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:32:39 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:33:02 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:33:02 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\user\Desktop\A.eye - Copy\src\pages\admin\AdminOps.jsx: Unterminated JSX contents. (319:10)
+
+[0m [90m 317 |[31m         )}
+ [90m 318 |[31m       [33m<[31m[33m/[31m[33mModal[31m[33m>[31m
+[31m[1m>[22m[31m[90m 319 |[31m     [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m     |[31m           [31m[1m^[22m[31m
+ [90m 320 |[31m   )[33m;[31m
+ [90m 321 |[31m }
+ [90m 322 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/user/Desktop/A.eye - Copy/src/pages/admin/AdminOps.jsx[39m:319:10
+      at constructor (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:6620:19)
+      at JSXParserMixin.jsxReadToken (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4464:20)
+      at JSXParserMixin.getTokenFromCode (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4790:12)
+      at JSXParserMixin.nextToken (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:5803:10)
+      at JSXParserMixin.next (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:5713:10)
+      at JSXParserMixin.eat (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:5717:12)
+      at JSXParserMixin.expect (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:6919:15)
+      at JSXParserMixin.jsxParseClosingElementAt (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4696:10)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4711:37)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4714:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4765:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4775:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10852:21)
+      at C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10821:39
+      at JSXParserMixin.allowInAnd (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12455:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10821:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12522:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11701:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11357:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10852:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10805:23)
+      at C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10801:39
+      at JSXParserMixin.allowInAnd (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12450:16)
+      at JSXParserMixin.parseExpression (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10801:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13171:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12827:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12796:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12776:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13345:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13338:10)
+      at JSXParserMixin.parseBlock (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12129:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12115:10)
+      at C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13474:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12432:14)
+      at JSXParserMixin.parseFunction (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13473:10)
+[2m9:33:02 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\user\Desktop\A.eye - Copy\src\pages\admin\AdminOps.jsx: Unterminated JSX contents. (319:10)
+
+[0m [90m 317 |[31m         )}
+ [90m 318 |[31m       [33m<[31m[33m/[31m[33mModal[31m[33m>[31m
+[31m[1m>[22m[31m[90m 319 |[31m     [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m     |[31m           [31m[1m^[22m[31m
+ [90m 320 |[31m   )[33m;[31m
+ [90m 321 |[31m }
+ [90m 322 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/user/Desktop/A.eye - Copy/src/pages/admin/AdminOps.jsx[39m:319:10
+      at constructor (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:6620:19)
+      at JSXParserMixin.jsxReadToken (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4464:20)
+      at JSXParserMixin.getTokenFromCode (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4790:12)
+      at JSXParserMixin.nextToken (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:5803:10)
+      at JSXParserMixin.next (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:5713:10)
+      at JSXParserMixin.eat (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:5717:12)
+      at JSXParserMixin.expect (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:6919:15)
+      at JSXParserMixin.jsxParseClosingElementAt (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4696:10)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4711:37)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4714:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4765:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4775:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10852:21)
+      at C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10821:39
+      at JSXParserMixin.allowInAnd (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12455:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10821:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12522:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11701:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11357:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10852:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10805:23)
+      at C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10801:39
+      at JSXParserMixin.allowInAnd (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12450:16)
+      at JSXParserMixin.parseExpression (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10801:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13171:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12827:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12796:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12776:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13345:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13338:10)
+      at JSXParserMixin.parseBlock (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13326:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12129:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12115:10)
+      at C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13474:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12432:14)
+      at JSXParserMixin.parseFunction (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13473:10)
+[2m9:33:13 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:33:36 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Careers.jsx[22m
+[2m9:33:39 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Careers.jsx[22m
+[2m9:34:04 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/home/CtaJobs.jsx[22m
+[2m9:43:54 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx, /src/pages/TrackStatus.jsx[22m
+[2m9:43:56 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx[22m
+[2m9:43:59 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx[22m
+[2m9:44:51 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx[22m
+[2m9:44:51 PM[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/pages/admin/AdminTables.jsx[22m Could not Fast Refresh (new export)
+[2m9:44:51 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m9:44:53 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ui/Badge.jsx, /src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx, /src/pages/TrackStatus.jsx[22m
+[2m9:44:53 PM[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/ui/Badge.jsx[22m Could not Fast Refresh ("STATUS_TO_BADGE" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m9:44:53 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/components/jobs/JobCard.jsx[22m
+[2m9:44:55 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:46:04 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:46:04 PM[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/pages/admin/AdminOps.jsx[22m Could not Fast Refresh (new export)
+[2m9:46:04 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m9:46:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m9:46:24 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m9:46:34 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m9:46:36 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m9:48:19 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m1:50:17 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/layout/Footer.jsx[22m
+[2m2:15:44 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/request/RequestPersonnel.jsx, /src/pages/TrackStatus.jsx, /src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx[22m
+[2m2:15:46 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx[22m
+[2m2:15:49 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx[22m
+[2m2:15:51 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx[22m
+[2m2:15:53 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx[22m
+[2m2:15:55 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx[22m
+[2m2:15:57 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx[22m
+[2m2:15:59 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/TrackStatus.jsx[22m
+[2m2:16:01 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m2:16:48 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m2:16:51 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m2:16:53 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m2:16:55 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m2:25:30 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m2:25:32 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m2:25:34 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m2:25:36 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminOps.jsx[22m
+[2m2:25:42 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/dashboard/DashboardData.jsx[22m
+[2m3:15:48 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/request/RequestPersonnel.jsx[22m
+[2m3:15:48 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/TrackStatus.jsx[22m
+[2m3:15:48 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx, /src/pages/dashboard/Dashboard.jsx, /src/pages/dashboard/TablesCard.jsx[22m
+[2m3:15:48 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to load url /src/services/adminService.js (resolved id: C:/Users/user/Desktop/A.eye - Copy/src/services/adminService.js) in C:/Users/user/Desktop/A.eye - Copy/src/pages/admin/AdminTables.jsx. Does the file exist?
+[2m3:15:49 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to load url /src/services/adminService.js (resolved id: C:/Users/user/Desktop/A.eye - Copy/src/services/adminService.js) in C:/Users/user/Desktop/A.eye - Copy/src/pages/admin/AdminTables.jsx. Does the file exist?
+[2m3:15:49 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to load url /src/services/adminService.js (resolved id: C:/Users/user/Desktop/A.eye - Copy/src/services/adminService.js) in C:/Users/user/Desktop/A.eye - Copy/src/pages/admin/AdminTables.jsx. Does the file exist?
+[2m3:15:49 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to load url /src/services/adminService.js (resolved id: C:/Users/user/Desktop/A.eye - Copy/src/services/adminService.js) in C:/Users/user/Desktop/A.eye - Copy/src/pages/admin/AdminTables.jsx. Does the file exist?
+[2m3:16:05 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/request/RequestPersonnel.jsx[22m
+[2m3:16:14 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/TrackStatus.jsx[22m
+[2m3:16:24 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/TrackStatus.jsx[22m
+[2m3:16:41 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx, /src/pages/dashboard/Dashboard.jsx, /src/pages/dashboard/TablesCard.jsx[22m
+[2m3:16:42 PM[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33mfirebase/firestore, firebase/app, firebase/auth, firebase/storage[32m[39m
+[2m3:16:42 PM[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m3:16:51 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx, /src/pages/dashboard/Dashboard.jsx, /src/pages/dashboard/TablesCard.jsx[22m
+[2m3:17:12 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx, /src/pages/dashboard/Dashboard.jsx, /src/pages/dashboard/TablesCard.jsx[22m
+[2m3:17:21 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx, /src/pages/dashboard/Dashboard.jsx, /src/pages/dashboard/TablesCard.jsx[22m
+[2m3:17:32 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx, /src/pages/dashboard/Dashboard.jsx, /src/pages/dashboard/TablesCard.jsx[22m
+[2m3:17:44 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:17:46 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:20:19 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx, /src/pages/dashboard/Dashboard.jsx, /src/pages/dashboard/TablesCard.jsx[22m
+[2m3:20:21 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx, /src/pages/dashboard/Dashboard.jsx, /src/pages/dashboard/TablesCard.jsx[22m
+[2m3:20:39 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx, /src/pages/dashboard/Dashboard.jsx, /src/pages/dashboard/TablesCard.jsx[22m
+[2m3:21:45 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:21:55 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:22:01 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:22:11 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:22:30 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:22:32 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:22:59 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:23:01 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:23:17 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:23:33 PM[22m [31m[1m[vite][22m[39m Pre-transform error: C:\Users\user\Desktop\A.eye - Copy\src\pages\admin\Admin.jsx: Unexpected token (475:2)
+
+[0m [90m 473 |[39m   )[33m;[39m
+ [90m 474 |[39m }
+[31m[1m>[22m[39m[90m 475 |[39m   )[33m;[39m
+ [90m     |[39m   [31m[1m^[22m[39m
+ [90m 476 |[39m }
+ [90m 477 |[39m
+ [90m 478 |[39m[0m
+[2m3:23:33 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\user\Desktop\A.eye - Copy\src\pages\admin\Admin.jsx: Unexpected token (475:2)
+
+[0m [90m 473 |[31m   )[33m;[31m
+ [90m 474 |[31m }
+[31m[1m>[22m[31m[90m 475 |[31m   )[33m;[31m
+ [90m     |[31m   [31m[1m^[22m[31m
+ [90m 476 |[31m }
+ [90m 477 |[31m
+ [90m 478 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/user/Desktop/A.eye - Copy/src/pages/admin/Admin.jsx[39m:475:2
+      at constructor (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:369:19)
+      at JSXParserMixin.raise (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:6620:19)
+      at JSXParserMixin.unexpected (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:6640:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11468:22)
+      at JSXParserMixin.parseExprAtom (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:4780:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11102:23)
+      at JSXParserMixin.parseUpdate (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11087:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:11067:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10920:61)
+      at JSXParserMixin.parseExprOps (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10925:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10902:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10852:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10805:23)
+      at C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10801:39
+      at JSXParserMixin.allowInAnd (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12450:16)
+      at JSXParserMixin.parseExpression (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:10801:17)
+      at JSXParserMixin.parseStatementContent (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12924:23)
+      at JSXParserMixin.parseStatementLike (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12796:17)
+      at JSXParserMixin.parseModuleItem (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12773:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13345:36)
+      at JSXParserMixin.parseBlockBody (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:13338:10)
+      at JSXParserMixin.parseProgram (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12651:10)
+      at JSXParserMixin.parseTopLevel (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:12641:25)
+      at JSXParserMixin.parse (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:14517:25)
+      at parse (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\parser\lib\index.js:14551:38)
+      at parser (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\user\Desktop\A.eye - Copy\node_modules\gensync\index.js:261:32)
+      at C:\Users\user\Desktop\A.eye - Copy\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\user\Desktop\A.eye - Copy\node_modules\gensync\index.js:223:11)
+      at C:\Users\user\Desktop\A.eye - Copy\node_modules\gensync\index.js:189:28
+      at C:\Users\user\Desktop\A.eye - Copy\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\user\Desktop\A.eye - Copy\node_modules\gensync\index.js:113:33
+      at step (C:\Users\user\Desktop\A.eye - Copy\node_modules\gensync\index.js:287:14)
+      at C:\Users\user\Desktop\A.eye - Copy\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\user\Desktop\A.eye - Copy\node_modules\gensync\index.js:223:11)
+[2m3:23:43 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:23:45 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/Admin.jsx[22m
+[2m3:25:43 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/admin/AdminTables.jsx, /src/pages/admin/AdminOps.jsx, /src/pages/admin/Admin.jsx, /src/pages/Careers.jsx, /src/pages/home/CtaJobs.jsx, /src/pages/dashboard/Dashboard.jsx, /src/pages/dashboard/TablesCard.jsx[22m

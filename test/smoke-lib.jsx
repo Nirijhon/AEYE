@@ -36,6 +36,7 @@ const Apply = (await import('../src/pages/apply/Apply.jsx')).default;
 const TrackStatus = (await import('../src/pages/TrackStatus.jsx')).default;
 const RequestPersonnel = (await import('../src/pages/request/RequestPersonnel.jsx')).default;
 const Dashboard = (await import('../src/pages/dashboard/Dashboard.jsx')).default;
+const Admin = (await import('../src/pages/admin/Admin.jsx')).default;
 const NotFound = (await import('../src/pages/NotFound.jsx')).default;
 
 const routes = [
@@ -48,6 +49,7 @@ const routes = [
   ['/track', TrackStatus, '/track'],
   ['/request-personnel', RequestPersonnel, '/request-personnel'],
   ['/dashboard', Dashboard, '/dashboard'],
+  ['/admin', Admin, '/admin'],
   ['/404', NotFound, '/nope'],
 ];
 

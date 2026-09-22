@@ -1,0 +1,81 @@
+rules_version = '2';
+
+/* ============================================================
+   A•EYE — Firestore security rules.
+
+   The public visitors must be able to:
+     - create a personnel request            (requests: create)
+     - create a job application              (applications: create)
+     - look up ONE application by its code   (applications: get by id)
+
+   Everything else — reading the pipelines, changing statuses,
+   publishing jobs, flipping the careers switch, reading the audit
+   trail and seeding/clearing data — requires a signed-in staff user.
+
+   Deploy with:  firebase deploy --only firestore:rules
+   ============================================================ */
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    /* ---------- Client personnel requests ---------- */
+    match /requests/{requestId} {
+      // Anyone may submit a request straight from the public form…
+      allow create: if request.resource.data.keys().hasAny([
+        'service', 'siteType', 'headcount', 'email', 'contactName'
+      ]);
+      // …but only staff may read the pipeline or change it.
+      allow read, update, delete: if signedIn();
+    }
+
+    /* ---------- Job applications ---------- */
+    match /applications/{appId} {
+      // Public submission (the /apply form).
+      allow create: if request.resource.data.keys().hasAny(['firstName', 'lastName', 'email', 'jobTitle']);
+      // Public status tracker: /track looks up a single document by its
+      // reference code (APP-1234), so `get` stays open while `list` does not.
+      allow get: if true;
+      allow list, update, delete: if signedIn();
+    }
+
+    /* ---------- Job posts ---------- */
+    // Read is public because /careers renders the published posts without
+    // signing in. Only the resulting set is filtered in the UI (postStatus),
+    // so treat job post content as public marketing copy.
+    match /jobPosts/{jobId} {
+      allow read: if true;
+      allow write: if signedIn();
+    }
+
+    /* ---------- Site settings (careers switch) ---------- */
+    match /settings/{key} {
+      allow read: if true;
+      allow write: if signedIn();
+    }
+
+    /* ---------- Audit trail ---------- */
+    match /audit/{entryId} {
+      allow read: if signedIn();
+      allow create: if signedIn();
+      allow update, delete: if false;   // append-only
+    }
+
+    /* ---------- Employees / deployments ---------- */
+    // (Still served from src/data/admin.js; locked down ahead of a future
+    // move to Firestore.)
+    match /employees/{id} {
+      allow read, write: if signedIn();
+    }
+    match /deployments/{id} {
+      allow read, write: if signedIn();
+    }
+
+    /* Deny anything not matched above. */
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

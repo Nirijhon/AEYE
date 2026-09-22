@@ -23,6 +23,7 @@ export default defineConfig({
         track: resolve(__dirname, 'track.html'),
         requestPersonnel: resolve(__dirname, 'request-personnel.html'),
         dashboard: resolve(__dirname, 'dashboard.html'),
+        admin: resolve(__dirname, 'admin.html'),
       },
     },
   },

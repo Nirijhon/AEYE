@@ -1,33 +1,71 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SectionHeading from '../../components/ui/SectionHeading';
 import Button from '../../components/ui/Button';
 import Icon from '../../components/ui/Icon';
 import JobCard from '../../components/jobs/JobCard';
-import { jobs, filterJobs } from '../../data/jobs';
+import { listJobPosts, getCareersEnabled } from '../../services/adminService';
 
-export function JobsPreview({ limit = 3 }) {
-  const featured = filterJobs({ categories: ['CCTV Installation', 'Security Operations'], locations: [] }).slice(0, limit);
+/**
+ * Home careers teaser — driven by the admin console master switch.
+ * ON + published posts → “Now hiring” preview with the latest roles.
+ * OFF (default) → “coming soon” announcement only.
+ */
+export function JobsPreview() {
+  const [state, setState] = useState(null); // null = loading
+
+  useEffect(() => {
+    let live = true;
+    Promise.all([getCareersEnabled(), listJobPosts()]).then(([enabled, all]) => {
+      if (live) setState({ enabled, published: all.filter((p) => p.postStatus === 'Published') });
+    });
+    return () => {
+      live = false;
+    };
+  }, []);
+
   return (
     <section className="section" style={{ background: 'var(--c-slate-50)' }}>
       <div className="container">
-        <SectionHeading
-          eyebrow="Now hiring"
-          title="We are expanding our ranks"
-          sub="Open roles across Metro Manila and Cebu. No experience? Most guard posts include full training."
-          centered
-          action={
-            <div style={{ marginTop: 'var(--space-3)' }}>
-              <Button to="/careers" variant="outline" size="md">
-                View all {jobs.length} openings
-              </Button>
+        {state === null ? (
+          <div className="spinner-center" role="status" aria-label="Loading careers info">
+            <div className="spinner spinner-lg" />
+          </div>
+        ) : state.enabled && state.published.length ? (
+          <>
+            <SectionHeading
+              eyebrow="Now hiring"
+              title="We are expanding our ranks"
+              sub={`Open roles across Metro Manila and Cebu. No experience? Most guard posts include full training.`}
+              centered
+              action={
+                <div style={{ marginTop: 'var(--space-3)' }}>
+                  <Button to="/careers" variant="outline" size="md">
+                    View all {state.published.length} openings
+                  </Button>
+                </div>
+              }
+            />
+            <div className="jobs-list">
+              {state.published.slice(0, 3).map((job) => (
+                <JobCard key={job.id} job={job} />
+              ))}
             </div>
-          }
-        />
-        <div className="jobs-list">
-          {featured.map((job) => (
-            <JobCard key={job.id} job={job} />
-          ))}
-        </div>
+          </>
+        ) : (
+          <SectionHeading
+            eyebrow="Careers"
+            title="Career opportunities — coming soon"
+            sub="We're preparing our new careers portal. Openings across Metro Manila and Cebu will be posted here in a future update."
+            centered
+            action={
+              <div style={{ marginTop: 'var(--space-3)' }}>
+                <Button to="/careers" variant="outline" size="md">
+                  Learn more
+                </Button>
+              </div>
+            }
+          />
+        )}
       </div>
     </section>
   );
@@ -42,8 +80,8 @@ export function CtaBanner() {
             <div>
               <h2>Ready when you are — on both sides of the gate.</h2>
               <p>
-                Hiring security? We can draft a plan today. Looking for work?
-                New posts open every week. Pick your path.
+                Hiring security? We can draft a plan today. Want to work with us?
+                Our careers portal is launching soon — watch that space.
               </p>
             </div>
             <div className="cta-actions">
@@ -52,8 +90,8 @@ export function CtaBanner() {
                 Hire personnel
               </Button>
               <Button to="/careers" variant="outline-light" size="lg">
-                <Icon name="user" size={18} />
-                Apply to jobs
+                <Icon name="clock" size={18} />
+                Careers — coming soon
               </Button>
             </div>
           </div>

@@ -5,6 +5,8 @@ import Icon from '../../components/ui/Icon';
 import { stats, chart, notifications, documentFeed } from '../../data/dashboard';
 import { NotificationList, ChartCard } from './DashboardData';
 import TableCard from './TablesCard';
+import EmptyState from '../../components/ui/States';
+import { isDemoCleared } from '../../services/adminService';
 
 const TABS = [
   { key: 'overview', label: 'Overview' },
@@ -55,6 +57,18 @@ export default function Dashboard() {
 }
 
 function Overview() {
+  // "Delete all data": no sample stat cards — start empty.
+  if (isDemoCleared()) {
+    return (
+      <div className="card dash-section">
+        <EmptyState
+          icon="layers"
+          title="No data yet"
+          sub="All demo data was deleted. Submit a request from the “Request Personnel” page and it will appear here."
+        />
+      </div>
+    );
+  }
   return (
     <div className="stat-grid">
       {stats.map((s) => (
@@ -65,25 +79,54 @@ function Overview() {
 }
 
 function RequestsTab() {
+  // "Delete all data": no sample notifications — only your own requests show.
+  const cleared = isDemoCleared();
   return (
     <div className="dash-grid">
       <TableCard title="Request pipeline" sub="Every staffing request and its current status" />
-      <NotificationList items={notifications} />
+      {cleared ? (
+        <div className="card dash-section">
+          <EmptyState
+            icon="bell"
+            title="No notifications"
+            sub="Notifications appear once there is activity on your requests."
+          />
+        </div>
+      ) : (
+        <NotificationList items={notifications} />
+      )}
     </div>
   );
 }
 
 function DocumentsTab() {
+  // "Delete all data": empty document feed + no sample activity chart.
+  const cleared = isDemoCleared();
   return (
     <div className="dash-grid">
-      <TableCard title="Security documents" sub="Reports and logs available for download (demo)" documentsOnly documentFeed={documentFeed} />
-      <div className="card dash-section">
-        <div className="dash-section-head">
-          <h2 className="dash-section-title">Weekly activity</h2>
-          <span className="badge badge-amber">Last 7 days</span>
+      <TableCard
+        title="Security documents"
+        sub="Reports and logs available for download (demo)"
+        documentsOnly
+        documentFeed={cleared ? [] : documentFeed}
+      />
+      {cleared ? (
+        <div className="card dash-section">
+          <EmptyState
+            icon="layers"
+            title="No activity yet"
+            sub="The weekly activity chart appears once records exist."
+          />
         </div>
-        <ChartCard data={chart} />
-      </div>
+      ) : (
+        <div className="card dash-section">
+          <div className="dash-section-head">
+            <h2 className="dash-section-title">Weekly activity</h2>
+            <span className="badge badge-amber">Last 7 days</span>
+          </div>
+          <ChartCard data={chart} />
+        </div>
+      )}
     </div>
   );
 }
